@@ -8,11 +8,16 @@
 - The piezometer readings HP1, HP2 etc in m of water. 
 - Time tm seconds requried to collect water for a height of hm in the measuring tank as mean value of readings t1 and t2.
 
-|----|----|----|----|----|----|----|----|----|----|
-| 1  |    |    |    |    |    |    |    |    |    |
-| 2  |    |    |    |    |    |    |    |    |    |
-| 3  |    |    |    |    |    |    |    |    |    |
-| 4  |    |    |    |    |    |    |    |    |    |
-| 5  |    |    |    |    |    |    |    |    |    |
+|  S.No | h(m)  | t1(s)  |  t2(s) |  Qa(m3/s) |A(m2)|V(m/s)|He(m)|Hp(m)|Total|
+|-------|-------|--------|--------|-----------|-----|------|-----|-----|-----|
+|   1.  |       |        |        |           |     |      |     |     |     |
+|   2.  |       |        |        |           |     |      |     |     |     |
+|   3.  |       |        |        |           |     |      |     |     |     |
+|   4.  |       |        |        |           |     |      |     |     |     |
+|   5.  |       |        |        |           |     |      |     |     |     |
+
+
+
+ 
 
 [Read More](docs/1.Bernoullis_experiment.pdf)
