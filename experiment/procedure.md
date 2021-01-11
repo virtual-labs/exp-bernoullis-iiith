@@ -6,4 +6,4 @@ Procedure for the experiment is as follows.
 4. Measure the heads at all the points and also discharge with help of diversion pan in the measuring tank.
 5. Varying the discharge and repeat the procedure. 
 
-[Read More][docs/1.Bernoullis_experiment.pdf]
+[Read More](docs/1.Bernoullis_experiment.pdf)
