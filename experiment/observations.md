@@ -15,4 +15,4 @@
 | 4  |    |    |    |    |    |    |    |    |    |
 | 5  |    |    |    |    |    |    |    |    |    |
 
-[Read More][docs/1.Bernoullis_experiment.pdf]
+[Read More](docs/1.Bernoullis_experiment.pdf)
