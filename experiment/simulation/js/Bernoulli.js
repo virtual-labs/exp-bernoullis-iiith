@@ -70,7 +70,7 @@ const interval = window.setInterval(() => {
                                                 );
                                                 const xFinalPosition12 = 1.0;
                                                 let xPos12 = 0;
-                                                const inteval12 = window.setInterval(
+                                                const interval12 = window.setInterval(
                                                   () => {
                                                     if (
                                                       xPos12 > xFinalPosition12
