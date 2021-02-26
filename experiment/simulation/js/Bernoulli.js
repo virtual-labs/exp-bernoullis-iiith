@@ -98,7 +98,7 @@ const interval = window.setInterval(() => {
                                                                   xFinalPosition14
                                                                 ) {
                                                                   let flow15 = document.getElementById(
-                                                                    "last-container"
+                                                                    "tap2-pipe-after"
                                                                   );
                                                                   const xFinalPosition15 = 1.0;
                                                                   let xPos15 = 0;
@@ -108,6 +108,52 @@ const interval = window.setInterval(() => {
                                                                         xPos15 >
                                                                         xFinalPosition15
                                                                       ) {
+                                                                        let flow16 = document.getElementById(
+                                                                          "tap2-stream-before"
+                                                                        );
+                                                                        const xFinalPosition16 = 1.0;
+                                                                        let xPos16 = 0;
+                                                                        const interval16 = window.setInterval(
+                                                                          () => {
+                                                                            if (
+                                                                              xPos16 >
+                                                                              xFinalPosition16
+                                                                            ) {
+                                                                              let flow17 = document.getElementById(
+                                                                                "last-container"
+                                                                              );
+                                                                              const xFinalPosition17 = 1.0;
+                                                                              let xPos17 = 0;
+                                                                              const interval17 = window.setInterval(
+                                                                                () => {
+                                                                                  if (
+                                                                                    xPos17 >
+                                                                                    xFinalPosition17
+                                                                                  ) {
+                                                                                    return window.clearInterval(
+                                                                                      interval17
+                                                                                    );
+                                                                                  }
+                                                                                  xPos17 += 0.01;
+                                                                                  flow17.setAttribute(
+                                                                                    "offset",
+                                                                                    xPos17
+                                                                                  );
+                                                                                },
+                                                                                1
+                                                                              );
+                                                                              return window.clearInterval(
+                                                                                interval16
+                                                                              );
+                                                                            }
+                                                                            xPos16 += 0.01;
+                                                                            flow16.setAttribute(
+                                                                              "offset",
+                                                                              xPos16
+                                                                            );
+                                                                          },
+                                                                          1
+                                                                        );
                                                                         return window.clearInterval(
                                                                           interval15
                                                                         );
