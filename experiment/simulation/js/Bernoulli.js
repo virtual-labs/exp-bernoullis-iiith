@@ -139,6 +139,8 @@ disablestart = false;
 let startAn = async () => {
   resetEverything();
   document.getElementById("startbutton").className = "button disabled";
+  document.getElementById("startbutton").disabled = true;
   await startAnimation();
   document.getElementById("startbutton").className = "button";
+  document.getElementById("startbutton").disabled = false;
 };
