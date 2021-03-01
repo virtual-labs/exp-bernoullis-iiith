@@ -86,7 +86,6 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
 
 //asyncMove("long-pipe")
 let startAnimation = async () => {
-  // windows.location.reload();
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
     if (id == "long-pipe" || id == "tap2-pipe-after") {
@@ -97,7 +96,6 @@ let startAnimation = async () => {
     let curPosition = 0;
     flag = 1;
     while (true) {
-      // Conditions for partial starts
       if (id == "first-container" && flag) {
         if (curPosition > 0.25) {
           asyncMove(ids[i + 1]);
@@ -137,8 +135,10 @@ let resetEverything = () => {
     path.setAttribute("offset", 0);
   });
 };
-
-let startAn = () => {
+disablestart = false;
+let startAn = async () => {
   resetEverything();
-  startAnimation();
+  document.getElementById("startbutton").className = "button disabled";
+  await startAnimation();
+  document.getElementById("startbutton").className = "button";
 };
