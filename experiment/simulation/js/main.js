@@ -88,6 +88,7 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
 let startAnimation = async () => {
   speed2 = document.getElementById("water-flow").value;
   speed2 = speed2 * 0.0002;
+  speed2 = speed2 == 0 ? 0.0002 : speed2;
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
     if (id == "long-pipe" || id == "tap2-pipe-after") {
