@@ -46,6 +46,9 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   let path = document.getElementById(id);
   let flags = [true, true, true, true, true, true, true];
   while (true) {
+    speed2 = document.getElementById("water-flow").value;
+    speed2 = speed2 * 0.0002;
+    speed2 = speed2 == 0 ? 0.0002 : speed2;
     // For Moving water in all seven pipes asynchronusly
     if (id == "long-pipe") {
       if (curPosition > 0.1 && flags[0]) {
@@ -78,7 +81,7 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
       }
     }
     if (curPosition > finalPosition) break;
-    curPosition += 0.01;
+    curPosition += speed2;
     path.setAttribute("offset", curPosition);
     await sleep(0.5);
   }
@@ -86,9 +89,6 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
 
 //asyncMove("long-pipe")
 let startAnimation = async () => {
-  speed2 = document.getElementById("water-flow").value;
-  speed2 = speed2 * 0.0002;
-  speed2 = speed2 == 0 ? 0.0002 : speed2;
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
     if (id == "long-pipe" || id == "tap2-pipe-after") {
@@ -99,6 +99,9 @@ let startAnimation = async () => {
     let curPosition = 0;
     flag = 1;
     while (true) {
+      speed2 = document.getElementById("water-flow").value;
+      speed2 = speed2 * 0.0002;
+      speed2 = speed2 == 0 ? 0.0002 : speed2;
       if (id == "first-container" && flag) {
         if (curPosition > 0.25) {
           asyncMove(ids[i + 1]);
