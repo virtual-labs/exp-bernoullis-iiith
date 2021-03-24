@@ -89,21 +89,21 @@
 
 
      const myQuestions = [{
-            question: "Bernoulli's equation holds good for non ideal fluids.", ///// Write the question inside double quotes
+            question: "1.This is a sample question:", ///// Write the question inside double quotes
             answers: {
-                a: "True", ///// Write the option 1 inside double quotes
-                b: "False ", ///// Write the option 2 inside double quotes
+                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
+                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
             },
-            correctAnswer: "b" ///// Write the correct option inside double quotes
+            correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "The pressure head is given by.",  ///// Write the question inside double quotes
+      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
       answers: {
-        a: "P/Y",                  ///// Write the option 1 inside double quotes
-        b: " V2/2g",                  ///// Write the option 2 inside double quotes
-             },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
+        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
+        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
+        c: "<img src='images/1c.PNG'>",      },
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
     },
 
 

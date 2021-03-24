@@ -1,1 +1,1 @@
-## Bernoulli's  
+## Experiment name
