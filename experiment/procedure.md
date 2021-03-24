@@ -5,6 +5,5 @@ Procedure for the experiment is as follows:
 3. Eventually the water will reach the maximum height for each tube.
 4. Try to change the flow speed by using **Control flow speed** glider. Bringing the glider to the left will slow down the water flow whereas bringing it to the right will speed it up!
 5. The **Control flow speed** glider is dynamic and can be changed midway when the water is filling up too. 
-6. Click/Tap on the **Reset** button to restart the expeirment afresh, i.e., with empty apparatus.
-<br>
+6. Click/Tap on the **Reset** button to restart the expeirment afresh, i.e., with empty apparatus.  
 [Read More about the Experiment in detail.](docs/1.Bernoullis_experiment.pdf)
