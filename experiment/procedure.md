@@ -1,4 +1,4 @@
-Procedure for the experiment is as follows.
+Procedure for the experiment is as follows:
 
 1. Click/Tap on the **Start** button to start the experiment.
 2. The water shall start flowing through the flow channel. The level in the Piezometer tubes shall start rising.
