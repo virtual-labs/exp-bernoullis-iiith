@@ -8,15 +8,7 @@ let arrayRemove = (arr, value) => {
   });
 };
 
-/**
- * "first-tube",
- * "second-tube",
- * "third-tube",
- * "fourth-tube",
- * "fifth-tube",
- * "sixth-tube",
- * "seventh-tube",
- */
+
 ids = [
   "tap-pipe-before",
   "tap-pipe-after",
@@ -28,19 +20,6 @@ ids = [
   "tap2-stream-before",
   "last-container",
 ];
-
-/* Original working function */
-
-// let asyncMove = async (id, curPosition=0, finalPosition=1) => {
-//   let path = document.getElementById(id);
-//     while(true){
-//       if (curPosition > finalPosition)
-//         break
-//       curPosition += 0.01;
-//       path.setAttribute("offset", curPosition);
-//       await sleep(0.5)
-//     }
-// }
 
 let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   let path = document.getElementById(id);
@@ -87,7 +66,6 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   }
 };
 
-//asyncMove("long-pipe")
 let startAnimation = async () => {
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
