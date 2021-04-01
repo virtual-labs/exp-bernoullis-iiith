@@ -25,9 +25,9 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   let path = document.getElementById(id);
   let flags = [true, true, true, true, true, true, true];
   while (true) {
-    speed2 = document.getElementById("water-flow").value;
-    speed2 = speed2 * 0.0002;
-    speed2 = speed2 == 0 ? 0.0002 : speed2;
+    animation_speed = document.getElementById("water-flow").value;
+    animation_speed = animation_speed * 0.0002;
+    animation_speed = animation_speed == 0 ? 0.0002 : animation_speed;
     // For Moving water in all seven pipes asynchronusly
     if (id == "long-pipe") {
       if (curPosition > 0.1 && flags[0]) {
@@ -60,7 +60,7 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
       }
     }
     if (curPosition > finalPosition) break;
-    curPosition += speed2;
+    curPosition += animation_speed;
     path.setAttribute("offset", curPosition);
     await sleep(0.5);
   }
@@ -77,9 +77,9 @@ let startAnimation = async () => {
     let curPosition = 0;
     flag = 1;
     while (true) {
-      speed2 = document.getElementById("water-flow").value;
-      speed2 = speed2 * 0.0002;
-      speed2 = speed2 == 0 ? 0.0002 : speed2;
+      animation_speed = document.getElementById("water-flow").value;
+      animation_speed = animation_speed * 0.0002;
+      animation_speed = animation_speed == 0 ? 0.0002 : animation_speed;
       if (id == "first-container" && flag) {
         if (curPosition > 0.25) {
           asyncMove(ids[i + 1]);
@@ -93,7 +93,7 @@ let startAnimation = async () => {
         }
       }
       if (curPosition > finalPosition) break;
-      curPosition += speed2;
+      curPosition += animation_speed;
       path.setAttribute("offset", curPosition);
       await sleep(0.5);
     }
