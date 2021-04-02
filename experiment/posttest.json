@@ -1,0 +1,18 @@
+[
+    {
+       "question":"Incompressible ideal fluids are fluids which have constant density.",
+       "answers":{
+          "a":"True",
+          "b":"False"
+       },
+       "correctAnswer":"a"
+    },
+    {
+       "question":"Bernoulli's theorem deals with law conservation of momentum.",
+       "answers":{
+          "a":"True",
+          "b":"False"
+       },
+       "correctAnswer":"a"
+    }
+ ]
