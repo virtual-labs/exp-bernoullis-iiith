@@ -3,8 +3,8 @@ Bernoulli’s equation states that the “sum of the kinetic energy (velocity he
 
 Pressure head ()+ Velocity head ()+ Elevation (Z) = a constant
 
-Where, P = the pressure.(N/m2)
-r = density of the ﬂuid, kg/m3
-V = velocity of ﬂow, (m/s)
-g = acceleration due to gravity, m/s2
+Where, P = the pressure.(N/m2) <br>
+r = density of the ﬂuid, kg/m3 <br>
+V = velocity of ﬂow, (m/s) <br>
+g = acceleration due to gravity, m/s2 <br>
 Z = elevation from datum line, (m) 
