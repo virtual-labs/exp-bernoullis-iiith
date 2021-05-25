@@ -16,4 +16,4 @@
 | 4  |    |    |    |    |    |    |    |    |    |
 | 5  |    |    |    |    |    |    |    |    |    |
 
-[Read More](docs/1.Bernoullis_experiment.pdf)
+To read about the Observations of the experiment click [here](docs/1.Bernoullis_experiment.pdf)

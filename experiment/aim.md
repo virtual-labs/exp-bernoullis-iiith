@@ -2,4 +2,4 @@ Most of the hydraulics studies are based on the principle of Bernoulli's theorem
 
 Therfore the aim of the experiment will be to verify Bernoulli's theorem. 
 
-[Read more about the experiment in detail.](docs/1.Bernoullis_experiment.pdf)
+To read about the Aim of the experiment click [here](docs/1.Bernoullis_experiment.pdf)
