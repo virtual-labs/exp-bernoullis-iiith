@@ -8,3 +8,5 @@ r = density of the ﬂuid, kg/m3 <br>
 V = velocity of ﬂow, (m/s) <br>
 g = acceleration due to gravity, m/s2 <br>
 Z = elevation from datum line, (m) 
+
+[Read More](docs/1.Bernoullis_experiment.pdf)
