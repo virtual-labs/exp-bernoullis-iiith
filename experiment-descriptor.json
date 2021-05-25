@@ -28,18 +28,18 @@
       "content-type": "text"
     },
     {
-      "target": "observations.html",
-      "source": "observations.md",
-      "label": "Observations",
-      "unit-type": "task",
-      "content-type": "text"
-    },
-    {
       "target": "simulation.html",
       "source": "simulation/index.html",
       "label": "Simulation",
       "unit-type": "task",
       "content-type": "simulation"
+    },
+    {
+      "target": "observations.html",
+      "source": "observations.md",
+      "label": "Observations",
+      "unit-type": "task",
+      "content-type": "text"
     },
     {
       "target": "posttest.html",
