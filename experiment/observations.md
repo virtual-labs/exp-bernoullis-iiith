@@ -1,6 +1,3 @@
-**Objectives**
-To verify Bernoulli's theorem. 
-
 **Constants**
 - Measuring tank size, a m<sup>2</sup>. 
 - The height (h<sub>m</sub>) for which the time t<sub>1</sub> and t<sub>2</sub> are noted to collect water in the measuring tank.
