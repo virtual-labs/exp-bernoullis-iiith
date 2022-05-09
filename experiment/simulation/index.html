@@ -1,11 +1,12 @@
 <html>
   <head>
-    <link
+<!--     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
       <div class="center">
         <button
           type="button"
-          class="action-button btn btn-lg"
+          class="v-button "
           id="startbutton"
           onclick="startAn()"
         >
@@ -21,7 +22,7 @@
         </button>
         <button
           type="button"
-          class="action-button btn btn-lg"
+          class="v-button"
           id="resetbutton"
           onclick="resetEverything()"
         >
@@ -29,9 +30,9 @@
         </button>
       </div>
     </div>
-    <div class="slidecontainer">
-      <label for="customRange1" class="form-label">Control flow speed</label>
-      <input type="range" class="form-range" id="water-flow" />
+    <div class="v-slider">
+      <label for="customRange1" class="v-slider">Control flow speed</label>
+      <input type="range" class="v-slider-full" id="water-flow" />
     </div>
     <svg viewBox="0 0 928 435" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g id="#000000">
