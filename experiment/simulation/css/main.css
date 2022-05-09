@@ -12,7 +12,7 @@
   transform: translate(-50%, -50%);
 }
 
-.slidecontainer {
+.v-slider {
   width: 40%; /* Width of the outside container */
   margin-top: 20px;
   margin-left: auto;
@@ -20,7 +20,7 @@
   position: relative;
 }
 
-.action-button {
+/*.action-button {
   color: white;
   text-align: center;
   background-color: #288ec8;
@@ -32,3 +32,4 @@
 .action-button:hover {
   background-color: #a9a9a9;
 }
+*/
