@@ -1,45 +1,58 @@
+ <!DOCTYPE html>
 <html>
-  <head>
-<!--     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="center">
-        <button
-          type="button"
-          class="v-button "
-          id="startbutton"
-          onclick="startAn()"
-        >
-          Start
-        </button>
-        <button
-          type="button"
-          class="v-button"
-          id="resetbutton"
-          onclick="resetEverything()"
-        >
-          Reset
-        </button>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <script type="text/javascript" src="js/bulma-slider.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+   </head>
+   <body class="page">
+      <div class="columns is-centered is-flex">
+         <div class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered">
+            <div class="column center-content">
+            </div>
+            <div class="columns is-mobile is-centered is-flex">
+               <div id="anime-demo" class="column has-text-centered controls">
+                  <div class="center">
+                     <button type="button" class="v-button" id="startbutton" onclick="startAn()">Start</button>
+                     <button type="button" class="v-button" id="resetbutton" onclick="resetEverything()">Reset</button>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-    <div class="v-slider">
-      <label for="customRange1" class="v-slider">Control flow speed</label>
-      <input type="range" class="v-slider-full" id="water-flow" />
-    </div>
-    <svg viewBox="0 0 928 435" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <g id="#000000">
-        <path
-          fill="#000000"
-          opacity="1.00"
-          d=" M 50.02 11.42 C 59.33 11.83 68.64 11.75 77.95 11.42 C 80.10 15.02 79.78 19.32 77.96 22.97 C 75.20 23.46 72.42 23.83 69.63 24.12 C 69.60 29.78 69.70 35.44 69.79 41.10 C 83.19 41.75 96.61 41.22 110.02 41.36 C 111.74 41.38 114.66 41.54 114.23 44.01 C 114.30 57.61 114.25 71.21 114.25 84.80 C 113.48 84.78 111.93 84.73 111.16 84.71 C 110.93 71.35 111.01 58.00 111.00 44.64 C 98.67 44.64 86.35 44.63 74.02 44.64 C 74.02 46.56 74.03 48.47 74.03 50.39 C 83.26 50.58 92.50 50.10 101.72 50.71 C 102.97 58.76 102.06 66.94 102.39 75.04 C 102.56 78.41 102.35 81.80 101.77 85.12 C 101.17 84.98 99.96 84.69 99.35 84.54 C 98.84 74.26 99.22 63.94 99.09 53.65 C 78.29 53.48 57.49 54.05 36.69 53.36 C 36.57 49.41 36.57 45.46 36.73 41.52 C 43.60 41.20 50.49 41.42 57.37 41.35 C 57.60 35.60 57.44 29.84 57.50 24.09 C 53.79 24.19 49.88 23.77 47.06 21.10 C 47.10 18.78 47.09 16.46 47.11 14.14 C 48.08 13.23 49.04 12.33 50.02 11.42 M 50.48 14.89 C 50.43 16.40 50.39 17.92 50.35 19.44 C 52.82 20.22 55.38 20.76 57.99 20.62 C 63.92 20.36 69.92 21.17 75.78 19.94 C 75.77 18.26 75.75 16.57 75.78 14.89 C 67.35 15.02 58.91 15.07 50.48 14.89 M 60.77 23.91 C 60.77 29.72 60.77 35.54 60.78 41.35 C 62.64 41.36 64.49 41.36 66.35 41.35 C 66.36 35.54 66.36 29.72 66.35 23.91 C 64.49 23.90 62.63 23.90 60.77 23.91 M 40.00 44.64 C 40.00 46.55 40.00 48.45 40.00 50.35 C 43.32 50.45 46.64 50.47 49.97 50.45 C 49.98 48.49 49.99 46.53 50.00 44.57 C 46.67 44.65 43.33 44.64 40.00 44.64 Z"
+      <!-- -->
+      <div class="columns is-centered is-variable is-flex is-flex-wrap-wrap workspace">
+         <div id="apparatus" class="column has-text-centered is-2-desktop is-5-tablet is-5-mobile apparatus">
+            <div class="v-datalist-container">
+               <div class="v-datalist-title"  >Heading</div>
+               <div class="v-slider">
+                  <label for="customRange1" class="v-slider">Control flow speed</label>
+                  <input type="range" class="v-slider-full" id="water-flow" />
+               </div>
+            </div>
+         </div>
+      <!-- -->
+         <div  class="column has-text-centered is-2-desktop is-5-tablet is-5-mobile observations">
+            <div class="v-datalist-container">
+               <div class="v-datalist-title">Observations</div>
+               <!---cantiliver starts-->
+               <div   class="" style="width: 100%; display: none;" >
+               </div>
+               <div   class="" style="width: 100%; display: none;">
+               </div>
+            </div>
+         </div>
+	 <!-- -->
+         <div class="column has-text-centered is-6-desktop is-10-tablet is-10-mobile simulation v-canvas-container" id="container">
+            <div class="columns">
+               <div class="column">
+                  <svg viewBox="-30 -100 928 495" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="#000000">
+                      <path fill="#000000" opacity="1.00"
+                        d=" M 50.02 11.42 C 59.33 11.83 68.64 11.75 77.95 11.42 C 80.10 15.02 79.78 19.32 77.96 22.97 C 75.20 23.46 72.42 23.83 69.63 24.12 C 69.60 29.78 69.70 35.44 69.79 41.10 C 83.19 41.75 96.61 41.22 110.02 41.36 C 111.74 41.38 114.66 41.54 114.23 44.01 C 114.30 57.61 114.25 71.21 114.25 84.80 C 113.48 84.78 111.93 84.73 111.16 84.71 C 110.93 71.35 111.01 58.00 111.00 44.64 C 98.67 44.64 86.35 44.63 74.02 44.64 C 74.02 46.56 74.03 48.47 74.03 50.39 C 83.26 50.58 92.50 50.10 101.72 50.71 C 102.97 58.76 102.06 66.94 102.39 75.04 C 102.56 78.41 102.35 81.80 101.77 85.12 C 101.17 84.98 99.96 84.69 99.35 84.54 C 98.84 74.26 99.22 63.94 99.09 53.65 C 78.29 53.48 57.49 54.05 36.69 53.36 C 36.57 49.41 36.57 45.46 36.73 41.52 C 43.60 41.20 50.49 41.42 57.37 41.35 C 57.60 35.60 57.44 29.84 57.50 24.09 C 53.79 24.19 49.88 23.77 47.06 21.10 C 47.10 18.78 47.09 16.46 47.11 14.14 C 48.08 13.23 49.04 12.33 50.02 11.42 M 50.48 14.89 C 50.43 16.40 50.39 17.92 50.35 19.44 C 52.82 20.22 55.38 20.76 57.99 20.62 C 63.92 20.36 69.92 21.17 75.78 19.94 C 75.77 18.26 75.75 16.57 75.78 14.89 C 67.35 15.02 58.91 15.07 50.48 14.89 M 60.77 23.91 C 60.77 29.72 60.77 35.54 60.78 41.35 C 62.64 41.36 64.49 41.36 66.35 41.35 C 66.36 35.54 66.36 29.72 66.35 23.91 C 64.49 23.90 62.63 23.90 60.77 23.91 M 40.00 44.64 C 40.00 46.55 40.00 48.45 40.00 50.35 C 43.32 50.45 46.64 50.47 49.97 50.45 C 49.98 48.49 49.99 46.53 50.00 44.57 C 46.67 44.65 43.33 44.64 40.00 44.64 Z"
         />
         <path
           fill="#000000"
@@ -260,17 +273,17 @@
         />
       </g>
     </svg>
-    <!-- Js files -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/main.js"></script>
-  </body>
+               </div>
+            </div>
+            <!-- <div  style="display: none;">
+            </div>
+            <div style="display: none;">	
+            </div> -->
+         </div>
+      </div>
+      <script src="./js/main.js"></script>
+   </body>
 </html>
+
+
+
