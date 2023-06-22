@@ -1,0 +1,18 @@
+[
+    {
+        "question":"1. Bernoulli's equation holds good for non ideal fluids.",
+        "answers":{
+            "a":"True",
+            "b":"False"
+        },
+        "correctAnswer":"b"
+    },
+    {
+        "question":"2. The pressure head is given by.",
+        "answers":{
+            "a":"P/Y",
+            "b":"V2/2g"
+        },
+        "correctAnswer":"a"
+    }
+]
