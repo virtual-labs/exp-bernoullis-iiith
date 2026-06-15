@@ -1,18 +1,156 @@
-[
+{
+  "version": 2.0,
+  "questions": [
     {
-       "question":"1. Incompressible ideal fluids are fluids which have constant density.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"a"
+      "question": "1. Bernoulli's principle states that an increase in the speed of a fluid occurs simultaneously with:",
+      "answers": {
+        "a": "An increase in pressure.",
+        "b": "A decrease in pressure.",
+        "c": "No change in pressure.",
+        "d": "An increase in elevation."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. This contradicts Bernoulli's principle, which describes an inverse relationship between fluid speed and pressure.",
+        "b": "Correct. According to Bernoulli's principle, as fluid velocity increases, its static pressure decreases to maintain the conservation of energy.",
+        "c": "Incorrect. Pressure changes are integral to Bernoulli's principle when velocity changes.",
+        "d": "Incorrect. Elevation is a separate component of the Bernoulli equation and does not directly correlate with speed in this manner."
+      },
+      "difficulty": "beginner"
     },
     {
-       "question":"2. Bernoulli's theorem deals with law conservation of momentum.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"a"
+      "question": "2. What is the primary purpose of the Bernoulli's Experiment apparatus in a lab?",
+      "answers": {
+        "a": "To measure fluid viscosity.",
+        "b": "To demonstrate the conservation of energy in fluid flow.",
+        "c": "To determine the density of various fluids.",
+        "d": "To study turbulent flow patterns."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Viscosity is generally neglected in ideal Bernoulli's applications.",
+        "b": "Correct. The experiment is designed to visually and quantitatively demonstrate how pressure, velocity, and elevation heads interrelate to conserve total energy.",
+        "c": "Incorrect. While density is a factor, it's usually assumed constant for incompressible fluids in this experiment.",
+        "d": "Incorrect. Bernoulli's principle is typically applied to laminar or steady flow, not turbulent flow."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In Bernoulli's equation, the term V²/2g represents the:",
+      "answers": {
+        "a": "Pressure head.",
+        "b": "Elevation head.",
+        "c": "Velocity head.",
+        "d": "Friction head."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Pressure head is P/ρg.",
+        "b": "Incorrect. Elevation head is Z.",
+        "c": "Correct. V²/2g is the velocity head, representing the kinetic energy per unit weight of the fluid.",
+        "d": "Incorrect. Friction head is an energy loss term not included in the ideal Bernoulli's equation."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. For Bernoulli's equation to be valid, the fluid flow must be considered:",
+      "answers": {
+        "a": "Compressible and unsteady.",
+        "b": "Viscous and rotational.",
+        "c": "Incompressible and steady.",
+        "d": "Turbulent and non-uniform."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Compressible and unsteady flows violate key assumptions of Bernoulli's equation.",
+        "b": "Incorrect. Viscous and rotational effects are neglected in the ideal Bernoulli's equation.",
+        "c": "Correct. The derivation of Bernoulli's equation relies on the assumptions of incompressible and steady flow.",
+        "d": "Incorrect. Turbulent and non-uniform flows are outside the scope of ideal Bernoulli's application."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. If the cross-sectional area of a pipe decreases, what happens to the fluid velocity and static pressure, assuming ideal flow?",
+      "answers": {
+        "a": "Velocity decreases, pressure increases.",
+        "b": "Velocity increases, pressure increases.",
+        "c": "Velocity increases, pressure decreases.",
+        "d": "Velocity decreases, pressure decreases."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A decrease in area leads to an increase in velocity due to conservation of mass (continuity equation).",
+        "b": "Incorrect. An increase in velocity is accompanied by a decrease in static pressure according to Bernoulli's principle.",
+        "c": "Correct. As per the continuity equation, a decrease in area leads to an increase in velocity. Subsequently, by Bernoulli's principle, this increase in velocity results in a decrease in static pressure.",
+        "d": "Incorrect. Velocity increases, not decreases, when the area reduces."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. The Bernoulli's constant along a streamline in steady, frictionless, incompressible flow:",
+      "answers": {
+        "a": "Varies with fluid density.",
+        "b": "Remains constant.",
+        "c": "Increases with elevation.",
+        "d": "Decreases with velocity."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. While density is a factor in the terms, the total sum (the constant) remains constant along a streamline.",
+        "b": "Correct. The fundamental statement of Bernoulli's theorem is that the sum of the pressure, velocity, and elevation heads remains constant along a streamline.",
+        "c": "Incorrect. Changes in elevation are accounted for within the equation, but the total sum remains constant.",
+        "d": "Incorrect. Changes in velocity are balanced by changes in pressure and/or elevation to keep the total sum constant."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Which of the following real-world phenomena can be explained using Bernoulli's principle?",
+      "answers": {
+        "a": "The buoyant force on a submerged object.",
+        "b": "The lift generated by an airplane wing.",
+        "c": "The resistance experienced by a ship moving through water.",
+        "d": "The capillary action in thin tubes."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Buoyancy is explained by Archimedes' principle.",
+        "b": "Correct. The shape of an airplane wing causes air to flow faster over the top surface, leading to lower pressure above the wing and thus generating lift, a direct application of Bernoulli's principle.",
+        "c": "Incorrect. Resistance (drag) is primarily due to viscous forces and form drag, not directly explained by ideal Bernoulli's principle.",
+        "d": "Incorrect. Capillary action is related to surface tension and intermolecular forces."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. In the context of Bernoulli's equation, what does 'ideal fluid' imply?",
+      "answers": {
+        "a": "High viscosity and compressibility.",
+        "b": "Zero viscosity and incompressibility.",
+        "c": "High density and low velocity.",
+        "d": "Turbulent flow and high pressure."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Ideal fluids are assumed to have negligible viscosity and be incompressible.",
+        "b": "Correct. An ideal fluid is a theoretical concept used in fluid dynamics that is incompressible (constant density) and inviscid (zero viscosity, meaning no internal friction)."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. If the total head at one point in an ideal fluid flow is 10 meters, what will be the total head at any other point along the same streamline?",
+      "answers": {
+        "a": "Less than 10 meters.",
+        "b": "More than 10 meters.",
+        "c": "Exactly 10 meters.",
+        "d": "Cannot be determined without more information."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. This would imply energy loss, which is neglected in ideal Bernoulli flow.",
+        "b": "Incorrect. This would imply energy gain, which is not accounted for in ideal Bernoulli flow.",
+        "c": "Correct. Bernoulli's principle states that the total head (sum of pressure, velocity, and elevation heads) remains constant along a streamline for ideal fluid flow.",
+        "d": "Incorrect. The principle itself provides enough information for ideal flow."
+      },
+      "difficulty": "advanced"
     }
- ]
+  ]
+}
