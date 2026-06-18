@@ -1,26 +1,26 @@
  <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
-      <link rel="stylesheet" href="css/main.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-   </head>
-   <body class="page">
-      <div class="columns is-centered is-flex">
-         <div class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered">
-            <div class="column center-content">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body class="page">
+    <div class="columns is-centered is-flex">
+      <div class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered">
+        <div class="column center-content">
+          </div>
+          <div class="columns is-mobile is-centered is-flex">
+            <div id="anime-demo" class="column has-text-centered controls">
+              <div class="center">
+                <button type="button" class="v-button" id="startbutton" onclick="startAn()">Start</button>
+                <button type="button" class="v-button" id="resetbutton" onclick="resetEverything()">Reset</button>
+              </div>
             </div>
-            <div class="columns is-mobile is-centered is-flex">
-               <div id="anime-demo" class="column has-text-centered controls">
-                  <div class="center">
-                     <button type="button" class="v-button" id="startbutton" onclick="startAn()">Start</button>
-                     <button type="button" class="v-button" id="resetbutton" onclick="resetEverything()">Reset</button>
-                  </div>
-               </div>
-            </div>
-         </div>
+          </div>
+        </div>
       </div>
       <!-- -->
       <div class="columns is-centered is-variable is-flex is-flex-wrap-wrap workspace">
