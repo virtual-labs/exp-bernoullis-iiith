@@ -1,19 +1,158 @@
-[
+{
+  "version": 2.0,
+  "questions": [
     {
-        "question":"1. Bernoulli's equation holds good for non ideal fluids.",
-        "answers":{
-            "a":"True",
-            "b":"False"
-        },
-        "correctAnswer":"b"
+      "question": "1. Bernoulli's equation is applicable to which type of fluid flow?",
+      "answers": {
+        "a": "Viscous and compressible fluids",
+        "b": "Ideal, incompressible, and steady fluids",
+        "c": "Turbulent and rotational fluids",
+        "d": "Non-ideal and unsteady fluids"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Bernoulli's equation assumes negligible viscous effects and incompressible flow.",
+        "b": "Correct. Bernoulli's equation is derived for ideal (frictionless), incompressible, and steady fluid flow.",
+        "c": "Incorrect. Bernoulli's equation assumes irrotational flow and is not typically applied to highly turbulent flows.",
+        "d": "Incorrect. Bernoulli's equation is for ideal and steady conditions."
+      },
+      "difficulty": "beginner"
     },
     {
-        "question":"2. The pressure head is given by.",
-        "answers":{
-            "a":"P/Y",
-            "b":"V2/2g"
-        },
-        "correctAnswer":"a"
+      "question": "2. What does the term P/ρg represent in Bernoulli's equation?",
+      "answers": {
+        "a": "Velocity head",
+        "b": "Pressure head",
+        "c": "Elevation head",
+        "d": "Total head"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Velocity head is V²/2g.",
+        "b": "Correct. P/ρg represents the pressure head, which is the height to which a column of the fluid would rise due to the static pressure.",
+        "c": "Incorrect. Elevation head is Z.",
+        "d": "Incorrect. Total head is the sum of all three heads."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Bernoulli's theorem is fundamentally based on the principle of conservation of:",
+      "answers": {
+        "a": "Mass",
+        "b": "Momentum",
+        "c": "Energy",
+        "d": "Volume"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Conservation of mass is addressed by the continuity equation.",
+        "b": "Incorrect. Conservation of momentum is addressed by Euler's or Navier-Stokes equations.",
+        "c": "Correct. Bernoulli's theorem is a statement of the conservation of energy for an ideal fluid in steady flow.",
+        "d": "Incorrect. While related to incompressible flow, it's not the fundamental principle."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of the following assumptions is NOT made in the derivation of the ideal Bernoulli's equation?",
+      "answers": {
+        "a": "The fluid is incompressible.",
+        "b": "The flow is steady.",
+        "c": "Viscous effects are significant.",
+        "d": "The flow is irrotational."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Incompressibility is a key assumption.",
+        "b": "Incorrect. Steady flow is an assumption.",
+        "c": "Correct. Bernoulli's equation neglects viscous effects, assuming an ideal (frictionless) fluid.",
+        "d": "Incorrect. Irrotational flow is an assumption for the general applicability of Bernoulli's equation."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. According to Bernoulli's principle, if the velocity of a fluid increases in a horizontal pipe, what happens to its static pressure?",
+      "answers": {
+        "a": "It increases.",
+        "b": "It decreases.",
+        "c": "It remains constant.",
+        "d": "It depends on the fluid's density."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. An increase in velocity corresponds to a decrease in static pressure to maintain constant total energy.",
+        "b": "Correct. For a horizontal flow (constant elevation head), an increase in kinetic energy (velocity) must be compensated by a decrease in pressure energy to keep the total energy constant.",
+        "c": "Incorrect. This would violate the conservation of energy principle.",
+        "d": "Incorrect. While density is part of the pressure head term, the inverse relationship between velocity and pressure holds true for incompressible fluids."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. In a converging-diverging nozzle used for Bernoulli's experiment, where would the fluid velocity typically be highest?",
+      "answers": {
+        "a": "At the inlet section",
+        "b": "At the diverging section",
+        "c": "At the throat (narrowest section)",
+        "d": "At the outlet section"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. The velocity increases as the cross-sectional area decreases.",
+        "b": "Incorrect. The velocity decreases in the diverging section as the area increases.",
+        "c": "Correct. According to the continuity equation and Bernoulli's principle, the fluid velocity is highest at the point of minimum cross-sectional area, which is the throat.",
+        "d": "Incorrect. The velocity at the outlet is typically lower than at the throat."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Why is Bernoulli's equation considered an approximation rather than an exact law for all fluid flows?",
+      "answers": {
+        "a": "It only applies to gases.",
+        "b": "It neglects the effects of gravity.",
+        "c": "It assumes an ideal fluid, neglecting viscous effects and energy losses.",
+        "d": "It does not account for changes in fluid density."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Bernoulli's equation applies to both liquids and gases, provided they behave as incompressible fluids.",
+        "b": "Incorrect. It includes the elevation head, which accounts for gravity.",
+        "c": "Correct. Bernoulli's equation simplifies real fluid behavior by neglecting friction (viscous effects) and other energy losses, making it an approximation.",
+        "d": "Incorrect. It assumes incompressible flow, meaning constant density."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. In a typical horizontal Bernoulli's apparatus, how does the elevation head (Z) usually behave along the streamline?",
+      "answers": {
+        "a": "It increases with velocity.",
+        "b": "It decreases with pressure.",
+        "c": "It remains approximately constant.",
+        "d": "It varies significantly along the flow."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Elevation head is independent of velocity in a horizontal setup.",
+        "b": "Incorrect. Elevation head is independent of pressure in a horizontal setup.",
+        "c": "Correct. For a horizontal apparatus, the centerline of the pipe is typically at a constant elevation, so the elevation head (Z) is considered constant.",
+        "d": "Incorrect. Significant variation in Z would imply a non-horizontal setup."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. What is the physical significance of the 'constant' term in Bernoulli's equation (P/ρg + V²/2g + Z = Constant)?",
+      "answers": {
+        "a": "It represents the fluid's temperature.",
+        "b": "It signifies the total energy per unit weight of the fluid along a streamline.",
+        "c": "It indicates the fluid's viscosity.",
+        "d": "It is a dimensionless quantity."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Temperature is not directly represented in the ideal Bernoulli's equation.",
+        "b": "Correct. The constant represents the total head or total mechanical energy per unit weight of the fluid, which remains constant along a streamline for ideal flow.",
+        "c": "Incorrect. Viscosity is neglected in the ideal Bernoulli's equation.",
+        "d": "Incorrect. The constant has units of length (e.g., meters) as it represents a head."
+      },
+      "difficulty": "advanced"
     }
-]
-
+  ]
+}
