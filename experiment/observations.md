@@ -1,129 +1,148 @@
-This section outlines the process for recording observations and performing the necessary calculations to verify Bernoulli's theorem. Understanding these steps is crucial for interpreting the experimental results.
+### What is Measured?
 
-### Key Experimental Parameters
+During the experiment, the following quantities are recorded:
 
-Before starting the experiment, note the following constant parameters:
+- Volume of water collected in the measuring tank,
+- Time required for collection,
+- Pressure head at different tapping points,
+- Diameter of the test section at each tapping location.
 
-- **Distance between each piezometer**: 7.5 cm
-- **Density of water (ρ)**: 0.001 kg/cm³ (equivalent to 1 g/cm³ or 1000 kg/m³)
-- **Acceleration due to gravity (g)**: 981 cm/s²
+These measurements provide the information required to determine the flow characteristics of the fluid through the converging-diverging channel.
 
-### Data Collection Guidelines
+### Why are these Measurements Important?
 
-For each observation point (Pitot tube/piezometer):
+Each measurement helps evaluate one aspect of the energy of the flowing fluid.
 
-1.  Record the serial number of the Pitot tube and its corresponding cross-sectional area (`A`) in cm².
-2.  Measure the volume of water collected (`q`) in cm³ over a specific time period.
-3.  Record the time taken for the collection of water (`t`) in seconds.
-4.  Note the pressure head (`P/w`) directly from the piezometer tube reading in cm.
+#### Collected Volume and Time
 
-### Sample Calculations (Detailed Examples)
+These measurements are used to determine the discharge through the apparatus. Knowing the discharge ensures that the flow conditions are the same throughout the experiment.
 
-To facilitate a clear understanding of the calculations involved, three detailed examples are provided below. These examples demonstrate how to compute discharge, velocity, velocity head, and total head from raw experimental data. Students are encouraged to follow these examples to perform their own calculations for other data points.
+#### Diameter of the Test Section
 
-#### <u>Example 1: Inlet Section</u>
+The diameter determines the cross-sectional area available for flow. Since the area changes along the channel, the fluid velocity also changes.
 
-**Given Data:**
+#### Pressure Head
 
-- Volume of water collected (`q`) = 500 cm³
-- Time taken (`t`) = 10 s
-- Area of the flow (`A`) = 5 cm²
-- Pressure head (`P/w`) = 20 cm
+The pressure head measured by the piezometer tubes represents the pressure energy of the flowing water. Comparing the pressure head at different sections shows how pressure changes as the flow area changes.
 
-**Calculations:**
+#### Velocity and Velocity Head
 
-1.  **Discharge (Q)**:
-    `Q = q / t`
-    `Q = 500 cm³ / 10 s = 50 cm³/s`
+Using the measured discharge and cross-sectional area, the velocity of flow and the corresponding velocity head can be determined. The velocity head represents the kinetic energy of the fluid.
 
-2.  **Velocity (V)**:
-    `V = Q / A`
-    `V = 50 cm³/s / 5 cm² = 10 cm/s`
+#### Total Head
 
-3.  **Velocity Head (V²/2g)**:
-    `V²/2g = (10 cm/s)² / (2 * 981 cm/s²) = 100 / 1962 cm ≈ 0.051 cm`
+Combining the pressure head and velocity head allows the total mechanical energy of the flowing water to be evaluated. If Bernoulli's theorem is valid, the total head should remain nearly constant throughout the apparatus, except for small losses due to friction.
 
-4.  **Total Head (H)**:
-    `H = P/w + V²/2g`
-    `H = 20 cm + 0.051 cm = 20.051 cm`
+### Sequential Calculations
 
-**Result:**
+1. Measure collected volume.
+2. Measure collection time.
+3. Calculate discharge.
 
-- Discharge (Q) = 50 cm³/s
-- Velocity (V) = 10 cm/s
-- Velocity Head = 0.051 cm
-- Total Head (H) = 20.051 cm
+$$
+Q=\frac{V}{t}
+$$
 
-#### <u>Example 2: Throat Section</u>
+4. Calculate area of each section.
 
-**Given Data:**
+$$
+A=\frac{\pi d^2}{4}
+$$
 
-- Volume of water collected (`q`) = 500 cm³
-- Time taken (`t`) = 10 s
-- Area of the flow (`A`) = 2 cm²
-- Pressure head (`P/w`) = 10 cm
+5. Calculate velocity.
 
-**Calculations:**
+$$
+v=\frac{Q}{A}
+$$
 
-1.  **Discharge (Q)**:
-    `Q = q / t`
-    `Q = 500 cm³ / 10 s = 50 cm³/s`
+6. Calculate velocity head.
 
-2.  **Velocity (V)**:
-    `V = Q / A`
-    `V = 50 cm³/s / 2 cm² = 25 cm/s`
+$$
+\frac{v^2}{2g}
+$$
 
-3.  **Velocity Head (V²/2g)**:
-    `V²/2g = (25 cm/s)² / (2 * 981 cm/s²) = 625 / 1962 cm ≈ 0.318 cm`
+7. Record pressure head from piezometer.
 
-4.  **Total Head (H)**:
-    `H = P/w + V²/2g`
-    `H = 10 cm + 0.318 cm = 10.318 cm`
+8. Calculate total head.
 
-**Result:**
+$$
+H=h_p+\frac{v^2}{2g}
+$$
 
-- Discharge (Q) = 50 cm³/s
-- Velocity (V) = 25 cm/s
-- Velocity Head = 0.318 cm
-- Total Head (H) = 10.318 cm
+9. Compare total head at all sections.
 
-#### <u>Example 3: Diverging Section</u>
+### Solved Numerical Example
 
-**Given Data:**
+Collected volume:
 
-- Volume of water collected (`q`) = 500 cm³
-- Time taken (`t`) = 10 s
-- Area of the flow (`A`) = 4 cm²
-- Pressure head (`P/w`) = 15 cm
+$$
+V=0.02\ m^3
+$$
 
-**Calculations:**
+Time:
 
-1.  **Discharge (Q)**:
-    `Q = q / t`
-    `Q = 500 cm³ / 10 s = 50 cm³/s`
+$$
+t=20\ s
+$$
 
-2.  **Velocity (V)**:
-    `V = Q / A`
-    `V = 50 cm³/s / 4 cm² = 12.5 cm/s`
+Discharge:
 
-3.  **Velocity Head (V²/2g)**:
-    `V²/2g = (12.5 cm/s)² / (2 * 981 cm/s²) = 156.25 / 1962 cm ≈ 0.0796 cm`
+$$
+Q=\frac{0.02}{20}=0.001\ m^3/s
+$$
 
-4.  **Total Head (H)**:
-    `H = P/w + V²/2g`
-    `H = 15 cm + 0.0796 cm = 15.0796 cm`
+Pipe diameter:
 
-**Result:**
+$$
+d=0.03\ m
+$$
 
-- Discharge (Q) = 50 cm³/s
-- Velocity (V) = 12.5 cm/s
-- Velocity Head = 0.0796 cm
-- Total Head (H) = 15.0796 cm
+Area:
 
-### Result & Discussion
+$$
+A=7.07\times10^{-4}\ m^2
+$$
 
-After performing the calculations for all data points, students can proceed to:
+Velocity:
 
-- Plot the graph between Pressure Head (`P/w`) and the distance along the flow (`x`).
-- Plot the graph between Velocity Head (`V²/2g`) and the distance along the flow (`x`).
-- Analyze these graphs in conjunction with the calculated Total Head (`H`) to discuss the verification of Bernoulli's theorem and any observed deviations from ideal behavior.
+$$
+v=\frac{0.001}{7.07\times10^{-4}}=1.41\ m/s
+$$
+
+Velocity head:
+
+$$
+\frac{1.41^2}{2\times9.81}=0.101\ m
+$$
+
+Pressure head from piezometer:
+
+$$
+0.85\ m
+$$
+
+Total head:
+
+$$
+H=0.85+0.101=0.951\ m
+$$
+
+Similar calculations are carried out for all tapping points.
+
+### Observation Table
+
+| Section | Diameter (m) | Pressure Head (m) | Velocity (m/s) | Velocity Head (m) | Total Head (m) |
+| ------- | -----------: | ----------------: | -------------: | ----------------: | -------------: |
+| 1       |        0.050 |              0.95 |           0.51 |             0.013 |          0.963 |
+| 2       |        0.040 |              0.92 |           0.80 |             0.033 |          0.953 |
+| 3       |        0.030 |              0.85 |           1.41 |             0.101 |          0.951 |
+| 4       |        0.040 |              0.91 |           0.80 |             0.033 |          0.943 |
+| 5       |        0.050 |              0.93 |           0.51 |             0.013 |          0.943 |
+
+### Interpretation
+
+The observations show that as the flow area decreases, the velocity increases and the pressure head decreases. In the diverging section, the velocity decreases and the pressure head increases.
+
+The total head remains nearly constant throughout the apparatus, with small reductions due to frictional losses and experimental uncertainties.
+
+The experiment therefore verifies Bernoulli's theorem and demonstrates the conversion between pressure energy and kinetic energy in flowing fluids.

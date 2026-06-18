@@ -1,53 +1,185 @@
-The Bernoulli theorem is an approximate relation between pressure, velocity, and elevation, and is valid in regions of steady, incompressible ﬂow where net frictional forces are negligible. The equation is obtained when the Euler’s equation is integrated along the streamline for a constant density (incompressible) fluid. The constant of integration (called the Bernoulli’s constant) varies from one streamline to another but remains constant along a streamline in steady, frictionless, incompressible flow. Despite its simplicity, it has been proven to be a very powerful tool for ﬂuid mechanics.
+Bernoulli's experiment demonstrates the principle of conservation of mechanical energy in a flowing fluid. As water flows through a pipe of varying cross-sectional area, its pressure and velocity continuously change. Bernoulli's theorem states that, under suitable conditions, the total mechanical energy of the fluid remains constant along a streamline.
 
-Bernoulli’s equation states that the “sum of the kinetic energy (velocity head), the pressure energy (static head) and Potential energy (elevation head) per unit weight of the fluid at any point remains constant” provided the flow is steady, irrotational, and frictionless and the fluid used is incompressible. This is however, on the assumption that energy is neither added to nor taken away by some external agency. The key approximation in the derivation of Bernoulli’s equation is that viscous effects are negligibly small compared to inertial, gravitational, and pressure effects. We can write the theorem as
+The total energy of a flowing fluid consists of three components:
+
+- Pressure energy,
+- Kinetic energy,
+- Potential energy.
+
+If the velocity of the fluid increases, its pressure decreases, and vice versa, provided no external energy is added or removed from the system.
+
+Bernoulli's principle is one of the fundamental laws of fluid mechanics and forms the basis for the design and analysis of many hydraulic structures and flow-measuring devices.
+
+### Everyday Intuition
+
+The relationship between pressure and velocity can be observed in many everyday situations.
+
+- Water emerging from a partially closed garden hose travels farther because reducing the outlet area increases the velocity of the water.
+- Air moving rapidly over an aircraft wing creates a pressure difference that generates lift.
+- Rivers flowing through narrow sections move faster than in wider sections.
+
+In each case, part of the pressure energy is converted into kinetic energy while the total mechanical energy remains nearly constant.
+
+The Bernoulli apparatus demonstrates this same phenomenon under controlled laboratory conditions.
+
+### Experimental Relevance
+
+The objective of the Bernoulli experiment is to verify Bernoulli's theorem experimentally by measuring the pressure head at different sections of a converging-diverging flow channel.
+
+As water passes through the converging section,
+
+- Flow area decreases,
+- Velocity increases,
+- Pressure decreases.
+
+As the channel diverges,
+
+- Flow area increases,
+- Velocity decreases,
+- Pressure recovers.
+
+By measuring the pressure head at different locations and calculating the velocity head, the total energy head can be evaluated and compared along the flow path.
+
+In an ideal fluid,
 
 $$
-\text{Pressure head} \left(\frac{P}{\rho g}\right)
-+ \text{Velocity head} \left(\frac{V^2}{2g}\right)
-+ \text{Elevation head} \left(Z\right)
-= \text{Constant}
+\text{Pressure head}+\text{Velocity head}+\text{Elevation head}
+===
+
+\text{Constant}.
 $$
 
-Where:
+Small deviations from the ideal value occur because of frictional losses and experimental uncertainties.
 
-- $P$ = Pressure of the fluid, $\mathrm{N/m^2}$
-- $\rho$ = Density of the fluid, $\mathrm{kg/m^3}$
-- $V$ = Velocity of flow, $\mathrm{m/s}$
-- $g$ = Acceleration due to gravity, $\mathrm{m/s^2}$
-- $Z$ = Elevation above the datum line, $\mathrm{m}$
+### Mathematical Formulation
 
-<div style="text-align: center;"><img src="images/figure1.png"></div>
-
-<div style="text-align: center;"> <em>Figure 1: Pressure head increases with a decrease in velocity head.</em>> </div>
+Bernoulli's theorem for steady, incompressible, frictionless flow along a streamline is
 
 $$
-\frac{P_1}{w} + \frac{V_1^2}{2g} + Z_1
-=
-\frac{P_2}{w} + \frac{V_2^2}{2g} + Z_2
-=
-\text{Constant}
+\frac{P}{\rho g}
++
+\frac{V^2}{2g}
++
+Z
+===
+
+\text{Constant}.
 $$
 
-Where:
+where,
 
-- $\frac{P}{w}$ is the **pressure head**.
-- $\frac{V^2}{2g}$ is the **velocity head**.
-- $Z$ is the **potential (elevation) head**.
+| Symbol | Quantity                    | Unit              |
+| ------ | --------------------------- | ----------------- |
+| $P$    | Pressure                    | $\mathrm{N/m^2}$  |
+| $\rho$ | Density of fluid            | $\mathrm{kg/m^3}$ |
+| $V$    | Velocity of flow            | $\mathrm{m/s}$    |
+| $g$    | Acceleration due to gravity | $\mathrm{m/s^2}$  |
+| $Z$    | Elevation above datum       | $\mathrm{m}$      |
 
-Bernoulli's equation forms the basis for solving a wide variety of fluid flow problems, such as:
+The three terms represent:
 
-- Jets issuing from an orifice,
-- Jet trajectories,
-- Flow under a gate and over a weir,
-- Flow measurement using obstruction meters,
-- Flow around submerged objects,
-- Flows associated with pumps and turbines.
+### Pressure Head
 
-The equipment is designed as a self-sufficient unit consisting of a sump tank, a measuring tank, and a pump for water circulation, as shown in Figure 1. The apparatus includes a supply tank connected to a flow channel. The channel gradually contracts over a certain length and then gradually enlarges over the remaining length.
+$$
+\frac{P}{\rho g}
+$$
 
- <div style="text-align: center;"><img src="images/figure2.png"></div>
- 
- <div style="text-align: center;"><em>Figure 2: Bernoulli's appparatus</em></div>
+Energy possessed due to pressure.
 
-<div style="text-align: center;"><em>In this equipment the Z is constant and is not taken for calculation.</em></div>
+### Velocity Head
+
+$$
+\frac{V^2}{2g}
+$$
+
+Energy possessed due to fluid motion.
+
+### Elevation Head
+
+$$
+Z
+$$
+
+Energy possessed due to elevation.
+
+Between two points,
+
+$$
+\frac{P_1}{\rho g}
++
+\frac{V_1^2}{2g}
++
+Z_1
+===
+
+\frac{P_2}{\rho g}
++
+\frac{V_2^2}{2g}
++
+Z_2.
+$$
+
+For the Bernoulli apparatus used in this experiment, all pressure tapping points are approximately at the same elevation. Therefore,
+
+$$
+Z_1=Z_2,
+$$
+
+and the elevation head remains constant.
+
+Hence,
+
+$$
+\frac{P}{\rho g}
++
+\frac{V^2}{2g}
+===
+
+\text{Constant}.
+$$
+
+### Application to the Bernoulli Apparatus
+
+The Bernoulli apparatus consists of
+
+- Water reservoir,
+- Centrifugal pump,
+- Measuring tank,
+- Converging-diverging test section,
+- Pressure tapping points connected to piezometer tubes.
+
+Water flows through the test section whose area gradually decreases and then increases.
+
+The piezometer tubes indicate the pressure head at different locations.
+
+At the throat,
+
+- Area is minimum,
+- Velocity is maximum,
+- Pressure head is minimum.
+
+At wider sections,
+
+- Velocity decreases,
+- Pressure head increases.
+
+By measuring discharge and pressure head, the velocity head and total head can be calculated and compared to verify Bernoulli's theorem.
+
+### Engineering Significance
+
+Bernoulli's theorem is widely used in hydraulic and civil engineering applications.
+
+Some important applications include:
+
+- Venturi meters,
+- Orifice meters,
+- Flow through nozzles,
+- Pipe flow analysis,
+- Jets issuing from openings,
+- Flow over weirs,
+- Hydraulic structures,
+- Pumps and turbines.
+
+Understanding the conversion between pressure energy and kinetic energy is essential for the design and operation of water supply systems, irrigation networks, hydroelectric plants, and hydraulic machinery.
+
+The Bernoulli experiment provides a practical demonstration of this fundamental energy principle and forms the basis for many advanced topics in fluid mechanics.
